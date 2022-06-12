@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/"
+     xml:base="http://example.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://example.org/venue#country -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/venue#country"/>
+
+
+    <!-- http://example.org/venue#city -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/venue#city"/>
+
+
+
+    <!-- http://example.org/match#ref-away_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/match#ref-away_id"/>
+    
+
+
+    <!-- http://example.org/match#ref-home_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/match#ref-home_id"/>
+    
+
+
+    <!-- http://example.org/match#ref-league_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/match#ref-league_id"/>
+    
+
+
+    <!-- http://example.org/match#ref-match_stats -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/match#ref-match_stats"/>
+    
+
+
+    <!-- http://example.org/match_facts#ref-venue -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/match_facts#ref-venue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/league#URL -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/league#URL"/>
+    
+
+
+    <!-- http://example.org/league#country_names -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/league#country_names"/>
+    
+
+
+    <!-- http://example.org/league#league_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/league#league_id"/>
+    
+
+
+    <!-- http://example.org/league#league_name -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/league#league_name"/>
+    
+
+
+    <!-- http://example.org/match#away_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match#away_id"/>
+    
+
+
+    <!-- http://example.org/match#home_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match#home_id"/>
+    
+
+
+    <!-- http://example.org/match#league_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match#league_id"/>
+    
+
+
+    <!-- http://example.org/match#match_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match#match_ID"/>
+    
+
+
+    <!-- http://example.org/match#match_stats -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match#match_stats"/>
+    
+
+
+    <!-- http://example.org/match_facts#attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#attendance"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_foulsCommitted -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_foulsCommitted"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_goal_scorers -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_goal_scorers"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_offsides -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_offsides"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_possessionPct -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_possessionPct"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_redCards -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_redCards"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_saves -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_saves"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_score -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_score"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_shotsSummary -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_shotsSummary"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_wonCorners -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_wonCorners"/>
+    
+
+
+    <!-- http://example.org/match_facts#away_yellowCards -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#away_yellowCards"/>
+    
+
+
+    <!-- http://example.org/match_facts#date -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#date"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_foulsCommitted -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_foulsCommitted"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_goal_scorers -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_goal_scorers"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_offsides -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_offsides"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_possessionPct -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_possessionPct"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_redCards -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_redCards"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_saves -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_saves"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_score -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_score"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_shotsSummary -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_shotsSummary"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_wonCorners -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_wonCorners"/>
+    
+
+
+    <!-- http://example.org/match_facts#home_yellowCards -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#home_yellowCards"/>
+    
+
+
+    <!-- http://example.org/match_facts#match_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#match_ID"/>
+    
+
+
+    <!-- http://example.org/match_facts#venue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#venue"/>
+
+
+
+    <!-- http://example.org/match_facts#year -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/match_facts#year"/>
+    
+
+
+    <!-- http://example.org/team#index -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/team#index"/>
+    
+
+
+    <!-- http://example.org/team#team -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/team#team"/>
+    
+
+
+
+
+    <!-- http://example.org/venue#venue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/venue#venue"/>
+    
+
+
+    <!-- http://example.org/venue#venue_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/venue#venue_id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/league -->
+
+    <owl:Class rdf:about="http://example.org/league"/>
+    
+
+
+    <!-- http://example.org/match -->
+
+    <owl:Class rdf:about="http://example.org/match"/>
+    
+
+
+    <!-- http://example.org/match_facts -->
+
+    <owl:Class rdf:about="http://example.org/match_facts"/>
+    
+
+
+    <!-- http://example.org/team -->
+
+    <owl:Class rdf:about="http://example.org/team"/>
+    
+
+
+    <!-- http://example.org/venue -->
+
+    <owl:Class rdf:about="http://example.org/venue"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.19) https://github.com/owlcs/owlapi -->
+

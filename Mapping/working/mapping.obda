@@ -1,0 +1,33 @@
+[PrefixDeclaration]
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+owl:		http://www.w3.org/2002/07/owl#
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPPING-ID1
+target		<http://example.org/venue/venue_id={venue_id}> a <http://example.org/venue> ; <http://example.org/venue#venue_id> {venue_id}^^xsd:integer ; <http://example.org/venue#venue> {venue}^^xsd:string ;  <http://example.org/venue#country> {country}^^xsd:string .
+source		SELECT * FROM "venue"
+
+mappingId	MAPPING-ID2
+target		<http://example.org/match/match_ID={match_ID}> a <http://example.org/match> ; <http://example.org/match_facts#match_ID> {match_ID}^^xsd:integer ; <http://example.org/match_facts#date> {date}^^xsd:string ; <http://example.org/match_facts#year> {year}^^xsd:integer ; <http://example.org/match_facts#attendance> {attendance}^^xsd:string ; <http://example.org/match_facts#venue> {venue}^^xsd:string ; <http://example.org/match_facts#home_score> {home_score}^^xsd:integer ; <http://example.org/match_facts#away_score> {away_score}^^xsd:integer ; <http://example.org/match_facts#home_possessionPct> {home_possessionPct}^^xsd:string ; <http://example.org/match_facts#away_possessionPct> {away_possessionPct}^^xsd:string ; <http://example.org/match_facts#home_shotsSummary> {home_shotsSummary}^^xsd:string ; <http://example.org/match_facts#away_shotsSummary> {away_shotsSummary}^^xsd:string ; <http://example.org/match_facts#home_foulsCommitted> {home_foulsCommitted}^^xsd:double ; <http://example.org/match_facts#away_foulsCommitted> {away_foulsCommitted}^^xsd:double ; <http://example.org/match_facts#home_yellowCards> {home_yellowCards}^^xsd:double ; <http://example.org/match_facts#away_yellowCards> {away_yellowCards}^^xsd:double ; <http://example.org/match_facts#home_redCards> {home_redCards}^^xsd:double ; <http://example.org/match_facts#away_redCards> {away_redCards}^^xsd:double ; <http://example.org/match_facts#home_offsides> {home_offsides}^^xsd:double ; <http://example.org/match_facts#away_offsides> {away_offsides}^^xsd:double ; <http://example.org/match_facts#home_wonCorners> {home_wonCorners}^^xsd:double ; <http://example.org/match_facts#away_wonCorners> {away_wonCorners}^^xsd:double ; <http://example.org/match_facts#home_saves> {home_saves}^^xsd:double ; <http://example.org/match_facts#away_saves> {away_saves}^^xsd:double ; <http://example.org/match_facts#home_goal_scorers> {home_goal_scorers}^^xsd:string ; <http://example.org/match_facts#away_goal_scorers> {away_goal_scorers}^^xsd:string .
+source		SELECT * FROM "match_facts"
+
+mappingId	MAPPING-ID3
+target		<http://example.org/match_facts/match_ID={match_facts_match_ID}> <http://example.org/match_facts#ref-venue> <http://example.org/venue/venue_id={venue_venue_id}> . 
+source		SELECT "match_facts"."match_ID" AS "match_facts_match_ID", "venue"."venue_id" AS "venue_venue_id" FROM "match_facts", "venue" WHERE "match_facts"."venue" = "venue"."venue_id"
+
+mappingId	MAPPING-ID4
+target		<http://example.org/match/match_ID={match_ID}> a <http://example.org/match> ; <http://example.org/match#match_ID> {match_ID}^^xsd:integer ; <http://example.org/match#home_id> {home_id}^^xsd:integer ; <http://example.org/match#away_id> {away_id}^^xsd:integer . 
+source		SELECT * FROM "match"
+
+mappingId	MAPPING-ID5
+target		<http://example.org/match/match_ID={match_match_ID}> <http://example.org/match#ref-home_id;away_id> <http://example.org/team/index={team_index}> . 
+source		SELECT "match"."match_ID" AS "match_match_ID", "team"."index" AS "team_index" FROM "match", "team" WHERE "match"."home_id" = "team"."index" AND "match"."away_id" = "team"."index"
+
+mappingId	MAPPING-ID6
+target		<http://example.org/team/index={index}> a <http://example.org/team> ; <http://example.org/team#index> {index}^^xsd:integer ; <http://example.org/team#team> {team}^^xsd:string . 
+source		SELECT * FROM "team"
+]]
+
