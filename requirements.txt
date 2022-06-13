@@ -86,7 +86,6 @@ pyparsing==3.0.9
 pyrsistent==0.18.1
 PySocks  
 python-dateutil  
-pytz==2021.3
 pywin32==304
 pywinpty==2.0.5
 pyzmq==23.0.0
