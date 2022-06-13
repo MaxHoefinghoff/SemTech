@@ -82,7 +82,6 @@ Pygments==2.12.0
 Pympler==1.0.1
 pyOpenSSL  
 pyoxigraph==0.3.2
-pyparsing==3.0.9
 pywin32==304
 pywinpty==2.0.5
 pyzmq==23.0.0
