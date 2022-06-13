@@ -80,7 +80,6 @@ pycparser
 pydeck==0.7.1
 Pygments==2.12.0
 Pympler==1.0.1
-pyOpenSSL  
 pywin32==304
 pywinpty==2.0.5
 pyzmq==23.0.0
@@ -89,9 +88,8 @@ requests
 scipy==1.8.1
 semver==2.13.0
 Send2Trash==1.8.0
-six  
 smmap==5.0.0
-soupsieve==2.3.2.post1
+soupsieve==2.3.2
 sparql-dataframe==0.4
 SPARQLWrapper==2.0.0
 sql-metadata==2.5.0
